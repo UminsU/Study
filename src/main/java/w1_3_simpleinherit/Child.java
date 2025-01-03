@@ -13,5 +13,6 @@ public class Child extends Parent {
         //System.out.println("I'm Child");
         super.hello(target);
         System.out.println("from Child");
+        System.out.println("qqqq");
     }
 }
