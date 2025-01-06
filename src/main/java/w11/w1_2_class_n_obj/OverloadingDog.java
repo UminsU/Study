@@ -1,4 +1,4 @@
-package w1.w1_2_class_n_obj;
+package w11.w1_2_class_n_obj;
 
 public class OverloadingDog {
     String name;

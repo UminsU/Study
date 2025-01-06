@@ -1,4 +1,4 @@
-package w1.w1_5_debugger;
+package w11.w1_5_debugger;
 
 import java.util.Scanner;
 
