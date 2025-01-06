@@ -1,4 +1,4 @@
-package w1_4_controllogics;
+package w1.w1_4_controllogics;
 
 public class LoopSample {
     public static void main(String[] args) {

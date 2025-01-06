@@ -1,4 +1,4 @@
-package w1_3_simpleinherit;
+package w1.w1_3_simpleinherit;
 
 // 상속을 나타내는 키워드는 extends
 // 확장하기 위해서 상속하기 때문

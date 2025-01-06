@@ -1,4 +1,4 @@
-package w1_2_class_n_obj;
+package w1.w1_2_class_n_obj;
 
 public class Classroom {
     // 정적변수(Static 변수) : 선언과 동시에 초기화

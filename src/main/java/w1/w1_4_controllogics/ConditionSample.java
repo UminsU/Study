@@ -1,6 +1,5 @@
-package w1_4_controllogics;
+package w1.w1_4_controllogics;
 
-import java.util.Objects;
 import java.util.Scanner;
 
 public class ConditionSample {
