@@ -1,4 +1,4 @@
-package w11.w1_3_simpleinherit;
+package w1.w1_3_simpleinherit;
 
 public class InheritTest {
     public static void main(String[] args) {

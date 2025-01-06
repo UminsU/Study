@@ -1,4 +1,4 @@
-package w11.w1_4_controllogics;
+package w1.w1_4_controllogics;
 
 import java.util.Scanner;
 
