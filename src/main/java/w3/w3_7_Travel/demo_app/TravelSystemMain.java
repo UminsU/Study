@@ -1,4 +1,4 @@
-package w3.w3_6_oop.demo_app;
+package w3.w3_7_Travel.demo_app;
 
 import java.util.*;
 

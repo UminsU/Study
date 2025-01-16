@@ -1,4 +1,4 @@
-package w3.w3_6_oop.demo_app;
+package w3.w3_7_Travel.demo_app;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -13,7 +13,11 @@ class DetailedNation extends Nation {
     private boolean isAtWar; // 전시 상태 여부
     private String creditRating; // 국가 신용 등급
 
+    // 부모 클래스의 생성자를 자식 클래스에서 super로 초기화하는 것, 부모클래스에서 직접 초기화하는것 ??
     public DetailedNation(String name, String politicalSystem, String language, int population, String capital, String currency, boolean isAtWar, String creditRating) {
+        super(name, politicalSystem, language, population, capital, currency);
+        this.isAtWar = isAtWar;
+        this.creditRating = creditRating;
     }
 
     @Override

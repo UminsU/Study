@@ -1,4 +1,4 @@
-package w3.w3_6_oop.demo_app;
+package w3.w3_7_Travel.demo_app;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -15,6 +15,10 @@ class DetailedCitizen extends Citizen {
     private boolean hasCriminalRecord; // 범죄 기록 여부
 
     public DetailedCitizen(String name, int age, int gender, DetailedNation nationality, int passportNumber, boolean militaryServiceStatus, boolean hasCriminalRecord) {
+        super(name, age, gender, nationality);
+        this.passportNumber = passportNumber;
+        this.militaryServiceStatus = militaryServiceStatus;
+        this.hasCriminalRecord = hasCriminalRecord;
     }
 
     @Override
