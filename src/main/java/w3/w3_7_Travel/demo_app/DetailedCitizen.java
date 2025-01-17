@@ -27,7 +27,7 @@ class DetailedCitizen extends Citizen {
         if (screenPassed) {
             System.out.println(getName() + ",  " + tgNation.getName() + " 입국이 허가되었습니다.");
         } else {
-            System.out.println(getName() + ", " + tgNation.getName() + " 입국이 허가되지 않았씁니다.");
+            System.out.println(getName() + ", " + tgNation.getName() + " 입국이 허가되지 않았습니다.");
         }
     }
 
@@ -38,6 +38,6 @@ class DetailedCitizen extends Citizen {
 
     @Override
     public String toString() {
-        return super.toString() + " (여권번호: " + passportNumber + ", 병역 여부: " + militaryServiceStatus + ", 범죄경력 여부 : " + hasCriminalRecord + ")";
+        return "(여권번호: " + passportNumber + ", 병역 여부: " + militaryServiceStatus + ", 범죄경력 여부 : " + hasCriminalRecord + ")";
     }
 }

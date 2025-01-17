@@ -36,8 +36,6 @@ class DetailedNation extends Nation {
             System.out.println("무국적자이므로 입국을 허가하지 않습니다.");
             return false;
         }
-
-        System.out.println(citizen.getName() + "의 입국을 허가합니다.");
         return true;
     }
 }
