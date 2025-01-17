@@ -7,15 +7,22 @@ import lombok.NoArgsConstructor;
 
 @EqualsAndHashCode(callSuper = true)
 @Data
-@AllArgsConstructor
+// @AllArgsConstructor
 @NoArgsConstructor
 class DetailedNation extends Nation {
     private boolean isAtWar; // 전시 상태 여부
     private String creditRating; // 국가 신용 등급
 
     // 부모 클래스의 생성자를 자식 클래스에서 super로 초기화하는 것, 부모클래스에서 직접 초기화하는것 ??
-    public DetailedNation(String name, String politicalSystem, String language, int population, String capital, String currency, boolean isAtWar, String creditRating) {
+    // 자식 클래스 객체는 생성 되고 있음
+    public DetailedNation(
+            String name, String politicalSystem, String language,
+            int population, String capital, String currency,
+            boolean isAtWar, String creditRating
+    ) {
+        // 부모 클래스 객체를 생성
         super(name, politicalSystem, language, population, capital, currency);
+
         this.isAtWar = isAtWar;
         this.creditRating = creditRating;
     }

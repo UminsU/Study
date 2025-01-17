@@ -15,5 +15,7 @@ abstract class Nation {
     private String capital; // 수도
     private String currency; // 화폐
 
+    // AllArgsConstructor
+
     public abstract boolean screenImmigration(Citizen citizen);
 }

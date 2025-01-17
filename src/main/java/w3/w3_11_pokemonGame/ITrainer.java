@@ -8,6 +8,6 @@ public interface ITrainer {
     void battle(ITrainer enemyTrainer);
     void battle(Pokemon wildPokemon);
     Pokemon searchDex(String pokemonName);
-    //Map<String, Pokename>
+    Map<String, Pokemon> searchDex(PokeDex.PokeCategory category);
 
 }

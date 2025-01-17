@@ -19,6 +19,9 @@ public class TravelSystemMain {
         citizens.add(new DetailedCitizen("Gyu", 40, 3, null, 789789, false, true));
     }
 
+    // 임베디드 시스템에서 중앙관리형으로 모든 시스템 실행이 일어나는 패러다임이 보임
+    // 객체지향적, 클래스 기반 핸들링, 분류가 안된 최상위 영역은 없다고 보는 방식의 패러다임 -> 객체지향적 데이터 관리에 더 가까움
+
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
@@ -88,6 +91,8 @@ public class TravelSystemMain {
     }
 
     private static DetailedCitizen findCitizenByName(String name) {
+        // 객체지향적으로 볼 때, 국가가 지원하는 기능
+        // findCitizen 동작을 수행하기 위해서는 관리 자료형을 Map
         for (DetailedCitizen citizen : citizens) {
             // 시민 이름이 일치하는지 확인
             if (citizen.getName() != null && citizen.getName().equalsIgnoreCase(name)) {
