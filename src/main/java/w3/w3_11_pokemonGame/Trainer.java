@@ -9,6 +9,11 @@ public class Trainer implements ITrainer {
     List<Pokemon> capturedPokemonList = new ArrayList<>();
     Map<String, Pokemon> capturedPokemonByName = new HashMap<>();
     Scanner inputReader = new Scanner(System.in);
+    
+    private String trainerName;
+    private String currentLocation;
+    private int gender; // 1: 남자, 2 : 여자
+    // gymboss ->  체육관 관장
 
     @Override
     public void hunt(Pokemon wildPokemon) {

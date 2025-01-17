@@ -14,6 +14,8 @@ public class Pokemon implements IPokemon {
 
     private String custoName;
     private int hp;
+    private int exp;
+
 
 
     @Override
