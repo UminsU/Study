@@ -12,7 +12,7 @@ public class PokeTown {
 
     // 동작이자 객체인 멤버를 선언 : 인터페이스 객체
     @Getter
-    private  ITownEvent townEvent; // 모든 타운에 별도구현체를 할당 가능
+    private ITownEvent townEvent; // 모든 타운에 별도구현체를 할당 가능
 
     public PokeTown(String name, String townIntroduction, boolean walkable) {
         this.name = name;
