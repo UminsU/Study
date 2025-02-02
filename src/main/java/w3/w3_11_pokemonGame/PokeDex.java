@@ -21,6 +21,8 @@ public class PokeDex {
                 new Pokemon("푸린", 10, PokeCategory.MOON),
                 new EvolvedPokemon("픽시", 10, PokeCategory.MOON),
                 new EvolvedPokemon("푸크린", 10, PokeCategory.MOON),
+                new FlyPokemon("피죤", 10, PokeCategory.SKY),
+                new SurfPokemon("거북왕", 10, PokeCategory.WATER),
         };
 
         for (PokeCategory category : PokeCategory.values()) {
