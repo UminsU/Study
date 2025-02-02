@@ -47,7 +47,7 @@ public class Pokemon implements IPokemon {
         EvolvedPokemon evolveTo = PokeDex.getEvolveForm(this.pokemonName);
         System.out.println("== Evolve To: " + evolveTo.getPokemonName() + " ==");
         return new EvolvedPokemon(
-        //        evolveTo.getPokemonName(), this.customName, evolveTo.getHP(), evolveTo.getPokeCategory()
+            evolveTo.getPokemonName(), this.customName, evolveTo.getHP(), evolveTo.getPokeCategory()
         );
     }
 }
