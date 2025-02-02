@@ -41,13 +41,13 @@ public class Pokemon implements IPokemon {
         // 결과 출력
     }
 
-//    @Override
-//    public Pokemon evolve() {
-//        // 데이터 및 동작
-//        EvolvedPokemon evolveTo = PokeDex.getEvolveForm(this.pokemonName);
-//        System.out.println("== Evolve To: " + evolveTo.getPokemonName() + " ==");
-//        return new EvolvedPokemon(
-//        //        evolveTo.getPokemonName(), this.customName, evolveTo.getHP(), evolveTo.getPokeCategory()
-//        );
-//    }
+    @Override
+    public Pokemon evolve() {
+        // 데이터 및 동작
+        EvolvedPokemon evolveTo = PokeDex.getEvolveForm(this.pokemonName);
+        System.out.println("== Evolve To: " + evolveTo.getPokemonName() + " ==");
+        return new EvolvedPokemon(
+        //        evolveTo.getPokemonName(), this.customName, evolveTo.getHP(), evolveTo.getPokeCategory()
+        );
+    }
 }
