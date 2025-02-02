@@ -24,14 +24,26 @@ public class GameLauncher {
         );
 
         Trainer trainer1 = new Trainer("플레이어", null);
+        Trainer trainer2 = new Trainer("라이벌플레이어", null);
 
         Pokemon[] trainer1Pokemon = {
                 new Pokemon("삐삐", "내 삐삐", 10, PokeDex.PokeCategory.MOON),
                 new Pokemon("푸린", "내 푸린", 10, PokeDex.PokeCategory.MOON),
                 new FlyPokemon("피죤", "내 피죤", 10, PokeDex.PokeCategory.SKY),
         };
+        trainer1.getPokemon(trainer1Pokemon);
+
+        Pokemon[] trainer2Pokemon = {
+                new Pokemon("삐삐", "니 삐삐", 10, PokeDex.PokeCategory.MOON),
+                new Pokemon("푸린", "니 푸린", 10, PokeDex.PokeCategory.MOON),
+                new SurfPokemon("거북왕", "니 거북왕", 10, PokeDex.PokeCategory.WATER),
+        };
+        trainer2.getPokemon(trainer2Pokemon);
 
         trainer1.townMove(moonHill);
         trainer1.townMove(initTown);
+
+        trainer2.townMove(moonHill);
+        trainer2.townMove(initTown);
     }
 }
