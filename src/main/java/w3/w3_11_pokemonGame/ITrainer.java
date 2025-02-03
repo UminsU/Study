@@ -10,4 +10,5 @@ public interface ITrainer {
     Pokemon searchDex(String pokemonName);
     Map<String, Pokemon> searchDex(PokeDex.PokeCategory category);
 
+    void townMove(PokeTown tgTown);
 }
